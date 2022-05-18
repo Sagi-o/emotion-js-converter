@@ -1,5 +1,7 @@
 # Convert template literal CSS-in-JS to object notation
 
+Link (works only on Chrome): https://sagi-o.github.io/template-literals-to-object-notation-converter/
+
 Example input:
 
 ```
