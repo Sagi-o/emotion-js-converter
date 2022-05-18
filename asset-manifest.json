@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.80ac6dbb.js",
-    "index.html": "/index.html",
-    "main.80ac6dbb.js.map": "/static/js/main.80ac6dbb.js.map"
+    "main.js": "/template-literals-to-object-notation-converter/static/js/main.80ac6dbb.js",
+    "index.html": "/template-literals-to-object-notation-converter/index.html",
+    "main.80ac6dbb.js.map": "/template-literals-to-object-notation-converter/static/js/main.80ac6dbb.js.map"
   },
   "entrypoints": [
     "static/js/main.80ac6dbb.js"
