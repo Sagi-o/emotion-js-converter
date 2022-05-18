@@ -15,7 +15,7 @@ const regexp = {
   prefix: /css`/g, // css` -> css({
   suffix: /(?<=[;}\s])`|(`,)/g, // ` -> })
   objectSuffix: /\s}/g, // } -> },
-  media: /(@media.*)([^\s{])/g, // @media screen and (max-width: 64rem) -> ${l}
+  media: /(@media.*)([^\s{])/g, // @media screen and (min-width: 64rem) -> ${l}
   cssProp: /(?<=(\s))([a-zA-Z]{1})*(-?[a-zA-Z]+)(?=:)/g, // font-size -> fontSize, padding -> padding
   cssStringValue: /(?<=(:))(?!(css))(?!(\${.+}))([^;])+/g, // 4rem -> '4rem', flex-start => 'flex-start'
   cssNumericValue: /(?<=(:\s?))'-?\d+'(?=[;,])/g, // '800' -> 800
@@ -29,7 +29,7 @@ const replacers = {
   suffix: () => "})",
   objectSuffix: () => "\n},\n",
   media: (value) => {
-    if (value.includes("min-width")) return breakpointNotFoundMessage;
+    if (value.includes("max-width")) return breakpointNotFoundMessage;
     for (const breakpoint in breakpoints) {
       if (value.includes(breakpoint)) return breakpoints[breakpoint];
     }
