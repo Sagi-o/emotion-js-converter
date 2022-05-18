@@ -2,6 +2,8 @@
 
 Link (works only on Chrome): https://sagi-o.github.io/template-literals-to-object-notation-converter/
 
+![Screen Shot 2022-05-18 at 15 43 45](https://user-images.githubusercontent.com/44846094/169041489-4b4c3dd8-3a12-474a-ab22-db098b1505da.png)
+
 Example input:
 
 ```
